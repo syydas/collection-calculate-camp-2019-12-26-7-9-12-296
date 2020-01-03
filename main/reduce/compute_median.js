@@ -1,7 +1,6 @@
 'use strict';
 
 function compute_median(collection) {
-  //在这里写入代码
   var median = 0;
   var index = 0;
   collection = collection.sort(function(a, b) {

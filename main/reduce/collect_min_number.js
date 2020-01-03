@@ -1,13 +1,12 @@
 'use strict';
 
 function collect_min_number(collection) {
-  //在这里写入代码
   var min = collection[0];
-  collection.forEach(function(item) {
-    if (item < min) {
-      max = item;
+  for (var item = 1; item < collection.length; item++) {
+    if (min > collection[item]) {
+      min = collection[item];
     }
-  });
+  }
   return min;
 }
 

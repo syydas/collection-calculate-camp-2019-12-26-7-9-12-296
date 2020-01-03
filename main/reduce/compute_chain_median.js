@@ -1,7 +1,6 @@
 "use strict";
 
 function compute_chain_median(collection) {
-  //在这里写入代码
   var median = 0;
   var tmpArr = collection.split("->");
   var arr = [];
