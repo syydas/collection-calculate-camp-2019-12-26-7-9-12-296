@@ -6,7 +6,6 @@ var single_element = function(collection) {
     }
   });
   var res = [];
-  var count = [];
   for (var item of tempArr) {
     if (tempArr.indexOf(item) === tempArr.lastIndexOf(item)) {
       res.push(item);
