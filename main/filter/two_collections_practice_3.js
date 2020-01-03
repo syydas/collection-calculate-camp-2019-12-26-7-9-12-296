@@ -1,16 +1,14 @@
 'use strict';
 
 function choose_divisible_integer(collection_a, collection_b) {
-
-  //在这里写入代码
   var res = [];
-  collection_a.forEach(function(item_a) {
-    collection_b.forEach(function(item_b) {
-      if (0 === item_a % item_b) {
-        res.push(item_a);
+   for (var itemA of collection_a) {
+      for (var itemB of collection_b) {
+      if (0 === itemA % itemB) {
+        res.push(itemA);
       }
-    })
-  });
+    }
+  }
   return res;
 }
 

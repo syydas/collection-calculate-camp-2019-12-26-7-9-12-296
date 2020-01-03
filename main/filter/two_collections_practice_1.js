@@ -1,16 +1,14 @@
 'use strict';
 
 function choose_common_elements(collection_a, collection_b) {
-
-  //在这里写入代码
   var res = [];
-  collection_a.forEach(item_a => {
-    collection_b.forEach(item_b => {
-      if (item_a === item_b) {
-        res.push(item_a);
+   for (var itemA of collection_a) {
+      for (var itemB of collection_b) {
+        if (itemA === itemB) {
+        res.push(itemA);
       }
-    });
-  });
+    }
+  }
   return res;
 }
 
