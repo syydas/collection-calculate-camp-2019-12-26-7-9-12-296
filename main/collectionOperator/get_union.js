@@ -1,7 +1,6 @@
 'use strict';
 
 function get_union(collection_a, collection_b) {
-  //在这里写入代码
   var i = 0;
   while (i < collection_b.length) {
     if (-1 === collection_a.indexOf(collection_b[i])) {
