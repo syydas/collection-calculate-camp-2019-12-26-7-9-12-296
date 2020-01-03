@@ -1,37 +1,37 @@
 "use strict";
 var even_group_calculate_average = function(collection) {
-  var res = collection.filter(function(a, index) {
-    return index % 2 === 1 && a % 2 === 0; 
+  var res = collection.filter(function(num, index) {
+    return index % 2 === 1 && num % 2 === 0; 
   });
   if (res.length == 0) {
     return [0];
   } else {
-    var a1 = res.filter(function(a) {
-      return a / 10 < 1;
+    var single = res.filter(function(num) {
+      return num / 10 < 1;
     });
-    var a2 = res.filter(function(a) {
-      return a / 10 >= 1 && a / 100 < 1;
+    var ten = res.filter(function(num) {
+      return num / 10 >= 1 && num / 100 < 1;
     });
-    var a3 = res.filter(function(a) {
-      return a / 100 >= 1;
+    var hundred = res.filter(function(num) {
+      return num / 100 >= 1;
     });
-    if (a1.length == 0 && a2.length == 0) {
+    if (single.length == 0 && ten.length == 0) {
       return [
-        a3.reduce(function(a, b) {
-          return a + b;
-        }) / a3.length
+        hundred.reduce(function(num1, num2) {
+          return num1 + num2;
+        }) / hundred.length
       ];
     } else {
       return [
-        a1.reduce(function(a, b) {
+        single.reduce(function(a, b) {
           return a + b;
-        }) / a1.length,
-        a2.reduce(function(a, b) {
+        }) / single.length,
+        ten.reduce(function(a, b) {
           return a + b;
-        }) / a2.length,
-        a3.reduce(function(a, b) {
+        }) / ten.length,
+        hundred.reduce(function(a, b) {
           return a + b;
-        }) / a3.length
+        }) / hundred.length
       ];
     }
   }
