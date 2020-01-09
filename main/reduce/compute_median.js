@@ -6,7 +6,7 @@ function compute_median(collection) {
   collection = collection.sort(function(a, b) {
     return a - b;
   });
-  if (collection.length % 2 != 0) {
+  if (collection.length % 2 != 0) { //TODO: !==
     index = parseInt(collection.length / 2);
     median = collection[index];
   } else {

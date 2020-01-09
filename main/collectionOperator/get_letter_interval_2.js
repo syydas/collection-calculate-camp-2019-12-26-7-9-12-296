@@ -10,7 +10,7 @@ function get_letter_interval_2(number_a, number_b) {
     for (var item = number_a; item >= number_b; item--) {
       res.push(numberMapToLetter(item));
     }
-  } else if (number_a === number_b) {
+  } else if (number_a === number_b) { //TODO: ===的情况和上面能合起来
     res.push(numberMapToLetter(number_a));
   }
   return res;
@@ -21,7 +21,7 @@ function numberMapToLetter(num) {
     return String.fromCharCode(num + 96);
   } else {
     var letter = String.fromCharCode((num - 1) % 26 + 97);
-    return String.fromCharCode((num - 1) / 26 + 96).concat(letter); 
+    return String.fromCharCode((num - 1) / 26 + 96).concat(letter);
   }
 }
 

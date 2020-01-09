@@ -24,11 +24,11 @@ function get_integer_interval_2(number_a, number_b) {
         number_a--;
       }
     }
-  } else if (number_b == number_a && number_a % 2 == 0) {
+  } else if (number_b == number_a && number_a % 2 == 0) { //TODO: ===
     var i = 0;
     res[i] = number_a;
   }
-  return res;  
+  return res;
 }
 
 module.exports = get_integer_interval_2;

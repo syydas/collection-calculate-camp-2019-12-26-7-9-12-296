@@ -9,7 +9,7 @@ var number_map_to_word_over_26 = function(collection){
       var letter = String.fromCharCode((item % 26) + 96);
       return String.fromCharCode(flag + 96).concat(letter);
     }
-  })
+  }) //TODO: 少分号
   return res;
 };
 

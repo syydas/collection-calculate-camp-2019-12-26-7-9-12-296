@@ -4,7 +4,7 @@ var even_asc_odd_desc = function(collection) {
   var even = [];
   var res = [];
   for (var item of collection) {
-    if (item % 2 == 0) {
+    if (item % 2 == 0) { //TODO: ===
       even.push(item);
     } else {
       odd.push(item);

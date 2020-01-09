@@ -9,7 +9,7 @@ var calculate_average = function(collection) {
       }
   }
   var average = sum / count;
-  return average;
+  return average; //TODO: inline variable
 };
 
 module.exports = calculate_average;

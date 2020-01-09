@@ -9,7 +9,7 @@ function compute_chain_median(collection) {
   }
   arr = arr.sort(function(a, b) {
     return a - b;
-  })
+  }) //TODO: missing semicolon
   if (arr.length % 2 !== 0) {
     var index = parseInt(arr.length / 2);
     median = arr[index];

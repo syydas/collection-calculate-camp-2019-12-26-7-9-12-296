@@ -11,7 +11,7 @@ function average_uneven(collection) {
     }
   }
   var average = sum / count;
-  return average;
+  return average; //TODO: inline variable
 }
 
 module.exports = average_uneven;
